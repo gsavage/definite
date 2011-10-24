@@ -1,5 +1,6 @@
 require "definite/version"
 require "definite/reader"
+require "definite/dumper"
 require "definite/model/table_definition"
 
 module Definite

@@ -1,5 +1,6 @@
 require 'thor'
 require 'definite'
+
 module Definite
   class CLI < Thor
 
@@ -10,7 +11,7 @@ module Definite
 
     desc "dump TABLE to file", "Dumps one or more tables to files in the db/tables folder"
     def dump table_or_tables
-      Definite::Reader.dump table_or_tables
+      Definite::Dumper.dump table_or_tables
     end
 
   end
