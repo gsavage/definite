@@ -1,0 +1,8 @@
+TableDefinition.define :users do
+
+  column :username, :string, :default => nil
+  column :password, :string
+
+  columns :timestamps
+
+end

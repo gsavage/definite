@@ -1,0 +1,1 @@
+Schema dump uses ActiveRecord::SchemaDumper

@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'definite/cli'
+Definite::CLI.start
