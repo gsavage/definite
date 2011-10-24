@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = Definite::VERSION
   s.authors     = ["Graham S Savage"]
   s.email       = ["grahamsavage@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/gsavage/definitive"
   s.summary     = %q{Database manipulation without migrations}
-  s.description = %q{Create the definitive description of your DB and let DB Script modify your schema safely for you}
+  s.description = %q{Create the definitive description of your DB and let Definitive modify your schema safely for you}
 
   s.rubyforge_project = "definite"
 
