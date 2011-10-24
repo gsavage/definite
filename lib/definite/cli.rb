@@ -8,5 +8,10 @@ module Definite
       Definite::Reader.read file_or_directories
     end
 
+    desc "dump TABLE to file", "Dumps one or more tables to files in the db/tables folder"
+    def dump table_or_tables
+      Definite::Reader.dump table_or_tables
+    end
+
   end
 end

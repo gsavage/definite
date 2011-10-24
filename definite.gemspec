@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = Definite::VERSION
   s.authors     = ["Graham S Savage"]
   s.email       = ["grahamsavage@gmail.com"]
-  s.homepage    = "https://github.com/gsavage/definitive"
+  s.homepage    = "https://github.com/gsavage/definite"
   s.summary     = %q{Database manipulation without migrations}
-  s.description = %q{Create the definitive description of your DB and let Definitive modify your schema safely for you}
+  s.description = %q{Create the definitive description of your DB and let Definite modify your schema safely for you}
 
   s.rubyforge_project = "definite"
 
@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec"
   s.add_development_dependency "cucumber"
   s.add_development_dependency "aruba"
+  s.add_development_dependency "sqlite3-ruby"
 
   s.add_dependency "activerecord"
   s.add_dependency "thor"

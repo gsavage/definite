@@ -1,12 +1,12 @@
-# Definitive
+# Definite
 
-Definitive takes a textual description of database tables and updates your database to match.
+Definite takes a textual description of database tables and updates your database to match.
 
 ## Motivation
 
 When maintaining a large Rails project, with new features being added on multiple branches, standard ActiveRecord migrations can get in the way; switching branches with uncommitted migrations can leave you in a state where you can't run rake db:migrate or rake db:rollback or any similar commands.
 
-Definitive overcomes this limitation by taking a different approach.  Now you only need to define what your database should look like; focus on the end-goal, rather than the migration.  When you run Definitive, it will compare your database with your description of the database, and do the migrations automatically for you.
+Definite overcomes this limitation by taking a different approach.  Now you only need to define what your database should look like; focus on the end-goal, rather than the migration.  When you run Definite, it will compare your database with your description of the database, and do the migrations automatically for you.
 
 ## Is it safe?
 
@@ -35,12 +35,12 @@ An example table definition looks like this:
 
 The call to `TableDefinition.define` starts the definition.  The single argument is the name of the table, which can be a string or a symbol.  The block passed in should consist of `column` statements, which are broadly similar to an `add_column` call within an ActiveRecord migration.
 
-### Running Definitive
+### Running Definite
 
-The `definitive` executable takes a number of arguments:
+The `definite` executable takes a number of arguments:
 
-- *definitive read filename* - Reads the filename table definition to check that it is a valid file.  This operation does not change your database at all.
+- *definite read filename* - Reads the filename table definition to check that it is a valid file.  This operation does not change your database at all.
 
-- *definitive read filepath* - Reads the all the `.table` files in the filepath, recursively.  Directory structure does not imply a namespace.  Files are checked for validity.  This operation does not change your database at all.
+- *definite read filepath* - Reads the all the `.table` files in the filepath, recursively.  Directory structure does not imply a namespace.  Files are checked for validity.  This operation does not change your database at all.
 
 
