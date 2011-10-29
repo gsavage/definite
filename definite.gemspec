@@ -26,4 +26,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency "activerecord"
   s.add_dependency "thor"
+  s.add_dependency "rails"
 end

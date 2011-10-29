@@ -3,6 +3,8 @@ require "definite/reader"
 require "definite/dumper"
 require "definite/model/table_definition"
 
+require "active_record"
+
 module Definite
   # Your code goes here...
 
